@@ -1,0 +1,14 @@
+name = "Quests Additions (Fabric)"
+filename = "questsadditions-fabric-1.19.2-1.4.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "8e12f0590a104eff2d06eae58500a7a6be11a109"
+
+[update]
+[update.curseforge]
+file-id = 4269984
+project-id = 580136

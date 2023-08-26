@@ -1,0 +1,14 @@
+name = "GeckoLib"
+filename = "geckolib-fabric-1.19-3.1.40.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "dab6fa804356b1599ce60601213530bcc5732cbc"
+
+[update]
+[update.curseforge]
+file-id = 4407239
+project-id = 388172

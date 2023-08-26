@@ -1,0 +1,28 @@
+{
+  "types": {
+    "leaves_type": {
+      "ad_astra.glacian": true
+    },
+    "wood_type": {
+      "ad_astra.aeronos": true,
+      "ad_astra.strophar": true,
+      "ad_astra.glacian": true
+    }
+  },
+  "entries": {
+    "leaves_type": {},
+    "wood_type": {
+      "farmersdelight.cabinet": true,
+      "twigs.table": true,
+      "another_furniture.drawer": true,
+      "another_furniture.table": true,
+      "another_furniture.shelf": true,
+      "create.window_pane": true,
+      "another_furniture.shutter": true,
+      "another_furniture.planter_box": true,
+      "another_furniture.bench": true,
+      "create.window": true,
+      "another_furniture.chair": true
+    }
+  }
+}
