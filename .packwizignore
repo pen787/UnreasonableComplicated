@@ -12,3 +12,17 @@
 /coremods
 /build
 /.vscode
+/usercache.json
+/usernamecache.json
+/options.txt
+/rhino.local.properties
+/.mixin.out
+/.fabric
+/irisUpdateInfo.json
+/emi.json
+/data
+/debug
+/journeymap
+/backups_mods
+/modern_industrialization/generated_resources
+/modern_industrialization/runtime_datagen
