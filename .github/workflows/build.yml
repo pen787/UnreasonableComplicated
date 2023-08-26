@@ -20,7 +20,7 @@ jobs:
         id: vars
         shell: bash
         run: |
-          echo "::set-output name=sha_short::$(git rev-parse --short $GITHUB_SHA)"
+          echo "sha_short=$(git rev-parse --short $GITHUB_SHA)" >> $GITHUB_OUTPUT
       - name: Install packwiz
         run: |
           go install github.com/packwiz/packwiz@latest
