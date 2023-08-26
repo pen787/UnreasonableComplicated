@@ -4,7 +4,7 @@
         "radius": 4,
         "depth": 4,
         "chanceForSample": 0.25,
-        "biomeTag": "#is_mountain",
+        "biomeTag": "#minecraft:is_overworld",
         "blockStateMatchers": ["minecraft:stone"],
         "blocks": {
             "default": [

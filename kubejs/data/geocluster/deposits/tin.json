@@ -3,9 +3,8 @@
   "config": {
     "yMin": 44,
     "yMax": 68,
-    "size": 24,
+    "size": 35,
     "density": 1.0,
-    "biomeTag": "#geocluster:is_sandy",
     "blocks": {
       "default": [
         {

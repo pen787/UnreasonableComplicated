@@ -36,13 +36,9 @@ StartupEvents.registry("item", (event) => {
             .displayName(display + " Drill Head");
     };
 
-    let newPickaxeHead = (id, display_name, color) => {
-        event.create(id + ".pickaxe.head").texture("kubejs:item/tool_head_pickaxe").displayName(display_name).color(0, color)
-    }
-
     let newwafer = (id, dp) => {
-        event.create("wafer."+id).displayName(dp+" Wafer").texture("kubejs:item/silicon/wafer."+id)
-        event.create("plate."+id).displayName(dp+" Silicon Plate").texture("kubejs:item/silicon/plate."+id)
+        event.create("wafer." + id).displayName(dp + " Wafer").texture("kubejs:item/silicon/wafer." + id)
+        event.create("plate." + id).displayName(dp + " Silicon Plate").texture("kubejs:item/silicon/plate." + id)
     }
 
     event
@@ -65,9 +61,9 @@ StartupEvents.registry("item", (event) => {
     newwafer("central_processing_unit", "CPU")
     newwafer("controll_memory_chip", "Controll Memory Chip")
     newwafer("integrated_logic_circuit", "Integrated Logic Chip")
-    newwafer("qbit","qbit")
-    newwafer("random_access_memory","Ram")
-    
+    newwafer("qbit", "qbit")
+    newwafer("random_access_memory", "Ram")
+
     //mold
     event.create("shape.empty").displayName("Empty Mold").texture("kubejs:item/mold/shape.empty")
     event.create("shape.mold.bun").displayName("Vacuum tube Mold").texture("kubejs:item/mold/shape.mold.bun")
@@ -90,8 +86,6 @@ StartupEvents.registry("item", (event) => {
     event.create("data_processor_unit").displayName("Data Processor Unit")
     event.create("data_transfer_unit").displayName("Data Transfer Unit")
 
-    //pickaxe head
-    newPickaxeHead("iron", "Iron Pickaxe Head", 0x474749)
 });
 
 StartupEvents.registry("block", (event) => { })
@@ -107,34 +101,56 @@ MIRegistrationEvents.registerFluidFuels(event => {
 MIMaterialEvents.addMaterials(event => {
     event.createMaterial("Zinc", "zinc", 0xbac4c8,
         builder => {
-        builder
-            .hardness("soft")
-            .materialSet("shiny")
-            .addParts("ingot", "nugget", "dust", "tiny_dust", "rod", "gear", "ring", "blade", "rotor", "coil", "plate", "bolt", "large_plate")
-            .block("copper")
-            .ore({ 
-                "generate": false,
-                "ore_set": "copper",
-                "vein_size": 8,
-                "veins_per_chunk": 8,
-                "max_y": 64,
-            })
-            .rawMetal("copper")
+            builder
+                .hardness("soft")
+                .materialSet("shiny")
+                .addParts("ingot", "nugget", "dust", "tiny_dust", "rod", "gear", "ring", "blade", "rotor", "coil", "plate", "bolt", "large_plate")
+                .block("copper")
+                .ore({
+                    "generate": false,
+                    "ore_set": "copper",
+                    "vein_size": 8,
+                    "veins_per_chunk": 8,
+                    "max_y": 64,
+                })
+                .rawMetal("copper")
+                .defaultRecipes()
+                .forgeHammerRecipes();
+        });
+
+    e.createMaterial("Brass", "brass", 0xb8a41f, (b) => {
+        b.addParts(
+            "dust",
+            "rod",
+            "gear",
+            "ring",
+            "blade",
+            "rotor",
+            "bolt",
+            "large_plate"
+        )
+            .addExternalPart("ingot", "create:brass_ingot", "#c:ingots/brass")
+            .addExternalPart(
+                "nugget",
+                "create:brass_nugget",
+                "#c:brass_nuggets"
+            )
+            .addExternalPart("plate", "create:brass_sheet", "#c:plates/brass")
+            .addExternalPart("block", "create:brass_block", "#c:brass_blocks")
             .defaultRecipes()
             .forgeHammerRecipes();
     });
-
 });
 
 MIMaterialEvents.modifyMaterial("silver", event => {
     event.builder
         .ore({
-			"generate": false,
-                "ore_set": "copper",
-                "vein_size": 8,
-                "veins_per_chunk": 8,
-                "max_y": 64,
-		})
+            "generate": false,
+            "ore_set": "copper",
+            "vein_size": 8,
+            "veins_per_chunk": 8,
+            "max_y": 64,
+        })
 })
 
 MIMachineEvents.registerCasings((event) => {
@@ -193,7 +209,7 @@ MIMachineEvents.registerRecipeTypes((event) => {
         .withItemInputs()
         .withFluidInputs()
         .withItemOutputs();
-    
+
     ADVANCED_QUANTUM_COMPUTER_ASSEMBLER = event
         .register("advanced_quantum_computer_assembler")
         .withFluidInputs()
@@ -426,13 +442,13 @@ MIMachineEvents.registerMachines((event) => {
 
     const aqcaHatch = event.hatchOf("item_input", "item_output", "fluid_input", "energy_input");
     const aqca = event.layeredShape("quantum_machine_casing", [
-        ["QQQQQQQ","QMGGGMQ","QGGGGGQ","QGGGGGQ","QGGGGGQ","QMGGGMQ","QQQQQQQ"],
-        ["QQQQQQQ","MPPPPPM","GP   PG","GP F PG","GP   PG","MPPPPPM","QQQQQQQ"],
-        ["QQQQQQQ","GPRRRPG","G     G","G     G","G     G","GPRRRPG","QQQQQQQ"],
-        ["QQQQQQQ","GPRFRPG","G     G","GF   FG","G     G","GPRFRPG","QQQQQQQ"],
-        ["QQQQQQQ","GPRRRPG","G     G","G     G","G     G","GPRRRPG","QQQQQQQ"],
-        ["QQQQQQQ","MPPPPPM","GP   PG","GP F PG","GP   PG","MPPPPPM","QQQQQQQ"],
-        ["QQQQQQQ","QMG#GMQ","QGGGGGQ","QGGGGGQ","QGGGGGQ","QMGGGMQ","QQQQQQQ"],
+        ["QQQQQQQ", "QMGGGMQ", "QGGGGGQ", "QGGGGGQ", "QGGGGGQ", "QMGGGMQ", "QQQQQQQ"],
+        ["QQQQQQQ", "MPPPPPM", "GP   PG", "GP F PG", "GP   PG", "MPPPPPM", "QQQQQQQ"],
+        ["QQQQQQQ", "GPRRRPG", "G     G", "G     G", "G     G", "GPRRRPG", "QQQQQQQ"],
+        ["QQQQQQQ", "GPRFRPG", "G     G", "GF   FG", "G     G", "GPRFRPG", "QQQQQQQ"],
+        ["QQQQQQQ", "GPRRRPG", "G     G", "G     G", "G     G", "GPRRRPG", "QQQQQQQ"],
+        ["QQQQQQQ", "MPPPPPM", "GP   PG", "GP F PG", "GP   PG", "MPPPPPM", "QQQQQQQ"],
+        ["QQQQQQQ", "QMG#GMQ", "QGGGGGQ", "QGGGGGQ", "QGGGGGQ", "QMGGGMQ", "QQQQQQQ"],
     ])
         .key("Q", event.memberOfBlock('modern_industrialization:quantum_machine_casing'), aqcaHatch)
         .key("G", event.memberOfBlock('ae2:quartz_vibrant_glass'), event.noHatch())
@@ -449,7 +465,7 @@ MIMachineEvents.registerMachines((event) => {
 
     for (let x = -1; x <= 1; x++) {
         for (let z = 0; z <= 3; z++) {
-            CCCAShapeBuilder.add(x,-1,z,tmh, CCPAHatch)
+            CCCAShapeBuilder.add(x, -1, z, tmh, CCPAHatch)
         }
     }
 
@@ -465,7 +481,7 @@ MIMachineEvents.registerMachines((event) => {
 
     for (let x = -1; x <= 1; x++) {
         for (let z = 0; z <= 3; z++) {
-            CCCAShapeBuilder.add(x,1,z,cssmc, event.noHatch())
+            CCCAShapeBuilder.add(x, 1, z, cssmc, event.noHatch())
         }
     }
 
@@ -477,8 +493,8 @@ MIMachineEvents.registerMachines((event) => {
         // REI progress bar
         event.progressBar(77, 33, "arrow"),
         // REI item inputs, item outputs, fluid inputs, fluid outputs
-        itemInputs => itemInputs.addSlots(25, 35,  3, 3), itemOutputs => {itemOutputs.addSlot(102, 32),itemOutputs.addSlot(102, 55),itemOutputs.addSlot(102, 75)},
-        fluidInputs => {fluidInputs.addSlot(36, 90),fluidInputs.addSlot(56, 90)}, fluidOutputs => {},
+        itemInputs => itemInputs.addSlots(25, 35, 3, 3), itemOutputs => { itemOutputs.addSlot(102, 32), itemOutputs.addSlot(102, 55), itemOutputs.addSlot(102, 75) },
+        fluidInputs => { fluidInputs.addSlot(36, 90), fluidInputs.addSlot(56, 90) }, fluidOutputs => { },
         /* MODEL CONFIGUATION */
         // casing of the controller, overlay folder, front overlay?, top overlay?, side overlay?
         "quantum_machine_casing", "advanced_quantum_computer_assembler", true, false, false,
@@ -493,8 +509,8 @@ MIMachineEvents.registerMachines((event) => {
         // REI progress bar
         event.progressBar(77, 33, "arrow"),
         // REI item inputs, item outputs, fluid inputs, fluid outputs
-        itemInputs => itemInputs.addSlots(25, 35,  5, 5), itemOutputs => {itemOutputs.addSlot(102, 32),itemOutputs.addSlot(102, 55),itemOutputs.addSlot(102, 75)},
-        fluidInputs => {fluidInputs.addSlot(36, 90),fluidInputs.addSlot(56, 90)}, fluidOutputs => {},
+        itemInputs => itemInputs.addSlots(25, 35, 5, 5), itemOutputs => { itemOutputs.addSlot(102, 32), itemOutputs.addSlot(102, 55), itemOutputs.addSlot(102, 75) },
+        fluidInputs => { fluidInputs.addSlot(36, 90), fluidInputs.addSlot(56, 90) }, fluidOutputs => { },
         /* MODEL CONFIGUATION */
         // casing of the controller, overlay folder, front overlay?, top overlay?, side overlay?
         "clean_stainless_steel_machine_casing", "clean_circuit_processing_assembler", true, false, false,

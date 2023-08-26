@@ -4,7 +4,7 @@
     "yMin": 37,
     "yMax": 46,
     "spread": 48,
-    "size": 28,
+    "size": 42,
     "biomeTag": "#minecraft:is_overworld",
     "blocks": {
       "default": [

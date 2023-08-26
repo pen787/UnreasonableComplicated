@@ -3,7 +3,7 @@
   "config": {
     "yMin": -25,
     "yMax": 19,
-    "baseRadius": 4,
+    "baseRadius": 6,
     "maxHeight": 7,
     "biomeTag": "#minecraft:is_mountain",
     "blocks": {

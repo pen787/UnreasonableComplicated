@@ -23,6 +23,7 @@ mode = "fancy"
 
 			[light_sources.settings.entities.minecraft]
 				chicken = true
+				bee = true
 				donkey = true
 				cow = true
 				slime = true
@@ -42,6 +43,7 @@ mode = "fancy"
 				zombie_villager = true
 				goat = true
 				horse = true
+				phantom = true
 				glow_squid = true
 				witch = true
 				cod = true
@@ -52,12 +54,17 @@ mode = "fancy"
 				enderman = true
 
 			[light_sources.settings.entities.naturalist]
-				robin = true
-				bass = true
+				deer = true
 				snail = true
+				canary = true
 				firefly = true
 				bluejay = true
-				butterfly = true
 				coral_snake = true
 				snake = true
+				cardinal = true
+				robin = true
+				bass = true
+				butterfly = true
+				bear = true
+				lizard = true
 

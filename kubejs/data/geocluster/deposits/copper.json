@@ -31,7 +31,7 @@
     ],
     "yMin": -16,
     "yMax": 90,
-    "size": 35,
+    "size": 64,
     "biomeTag": "#minecraft:is_overworld",
     "generationWeight": 4
   }
