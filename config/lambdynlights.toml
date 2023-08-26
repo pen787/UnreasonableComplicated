@@ -33,6 +33,7 @@ mode = "fancy"
 				zombie = true
 				drowned = true
 				sheep = true
+				experience_orb = true
 				player = true
 				item = true
 				wolf = true

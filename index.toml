@@ -4183,6 +4183,11 @@ hash = "0103115337ebe895bb4802a4de51d9ea8f130112581b9cdf28ed3abee59d50de"
 metafile = true
 
 [[files]]
+file = "mods/probejs.pw.toml"
+hash = "c98dc920b22847e8b8b54c48a6c310d0e1aefcf095e1f1379db762089fc95499"
+metafile = true
+
+[[files]]
 file = "mods/quests-additions-fabric.pw.toml"
 hash = "1c8b5be3f00edc325c1ba11b4e0dbfc31a098b929975388b5b38054522572b57"
 metafile = true
