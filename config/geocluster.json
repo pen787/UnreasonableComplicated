@@ -6,7 +6,7 @@
   "CHUNK_SKIP_CHANCE": 0.7,
   "NUMBER_CLUSTERS_PER_CHUNK": 2,
   "DEBUG_WORLD_GEN": false,
-  "MAX_SAMPLES_PER_CHUNK": 6,
+  "MAX_SAMPLES_PER_CHUNK": 9,
   "DEFAULT_REPLACEMENT_MATERIALS": [
     "minecraft:stone",
     "minecraft:andesite",

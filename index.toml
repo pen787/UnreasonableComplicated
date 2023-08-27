@@ -4248,6 +4248,11 @@ hash = "aca271587f261376936970d69005a986ced46dd454b8ce3311878d296997bed7"
 metafile = true
 
 [[files]]
+file = "mods/roughly-enough-items.pw.toml"
+hash = "e2ab3bea2174d0e8ccc193894e81d8279b375e45823c29b3bee915938b03f801"
+metafile = true
+
+[[files]]
 file = "mods/seasonhud-fabric.pw.toml"
 hash = "b04d67ca28a3177773f0f8c651ddbaa05edab3ce9e74df2a9b81cb93bf6d6e69"
 metafile = true
