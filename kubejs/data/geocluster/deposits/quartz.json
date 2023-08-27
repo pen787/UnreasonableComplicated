@@ -3,7 +3,7 @@
   "config": {
     "yMin": -64,
     "yMax": -48,
-    "baseRadius": 7,
+    "baseRadius": 9,
     "maxHeight": 8,
     "biomeTag": "#minecraft:is_overworld",
     "blocks": {
