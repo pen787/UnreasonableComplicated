@@ -1,13 +1,19 @@
 {
-    "type": "geocluster:top_deposit_layer",
+    "type": "geocluster:deposit_layer",
     "config": {
-        "radius": 4,
-        "depth": 4,
-        "chanceForSample": 0.25,
+        "yMin": -4,
+        "yMax": 32,
+        "radius": 12,
+        "depth": 8,
         "biomeTag": "#minecraft:is_overworld",
-        "blockStateMatchers": ["minecraft:stone"],
         "blocks": {
             "default": [
+                {
+                    "block": "modern_industrialization:salt_ore",
+                    "chance": 1.0
+                }
+            ],
+            "minecraft:deepslate": [
                 {
                     "block": "modern_industrialization:salt_ore",
                     "chance": 1.0
@@ -16,10 +22,10 @@
         },
         "samples": [
             {
-                "block": null,
+                "block": "modern_industrialization:salt_ore",
                 "chance": 1.0
             }
         ],
-        "generationWeight": 1
+        "generationWeight": 3
     }
 }

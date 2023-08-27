@@ -1,39 +1,39 @@
 {
-  "type": "geocluster:deposit_sparse",
-  "config": {
-    "yMin": 34,
-    "yMax": 78,
-    "size": 64,
-    "spread": 3,
-    "biomeTag": "#minecraft:is_overworld",
-    "blocks": {
-      "default": [
-        {
-          "block": "coal_ore",
-          "chance": 0.9
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": 34,
+        "yMax": 78,
+        "size": 128,
+        "spread": 4,
+        "biomeTag": "#minecraft:is_overworld",
+        "blocks": {
+            "default": [
+                {
+                    "block": "coal_ore",
+                    "chance": 0.75
+                },
+                {
+                    "block": "modern_industrialization:lignite_coal_ore",
+                    "chance": 0.25
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "deepslate_coal_ore",
+                    "chance": 0.75
+                },
+                {
+                    "block": "modern_industrialization:deepslate_lignite_coal_ore",
+                    "chance": 0.25
+                }
+            ]
         },
-        {
-          "block": "modern_industrialization:lignite_coal_ore",
-          "chance": 0.1
-        }
-      ],
-      "minecraft:deepslate": [
-        {
-          "block": "deepslate_coal_ore",
-          "chance": 0.9
-        },
-        {
-          "block": "modern_industrialization:deepslate_lignite_coal_ore",
-          "chance": 0.1
-        }
-      ]
-    },
-    "samples": [
-      {
-        "block": "geocluster:coal_ore_sample",
-        "chance": 1.0
-      }
-    ],
-    "generationWeight": 5
-  }
+        "samples": [
+            {
+                "block": "geocluster:coal_ore_sample",
+                "chance": 1.0
+            }
+        ],
+        "generationWeight": 5
+    }
 }

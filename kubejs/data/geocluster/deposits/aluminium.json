@@ -1,9 +1,9 @@
 {
   "type": "geocluster:deposit_dense",
   "config": {
-    "yMin": 48,
+    "yMin": -48,
     "yMax": 65,
-    "size": 64,
+    "size": 128,
     "biomeTag": "#minecraft:is_overworld",
     "blocks": {
       "default": [
@@ -33,6 +33,6 @@
         "chance": 1.0
       }
     ],
-    "generationWeight": 2
+    "generationWeight": 3
   }
 }
