@@ -20,7 +20,8 @@ MIMaterialEvents.addMaterials(event => {
                 .forgeHammerRecipes();
         });
 
-        event.createMaterial("Brass", "brass", 0xb8a41f, (b) => {
+    event.createMaterial("Brass", "brass", 0xb8a41f, (b) => {
+        b.materialSet("shiny")
         b.addParts(
             "dust",
             "rod",
@@ -31,14 +32,6 @@ MIMaterialEvents.addMaterials(event => {
             "bolt",
             "large_plate"
         )
-            .addExternalPart("ingot", "create:brass_ingot", "#c:ingots/brass")
-            .addExternalPart(
-                "nugget",
-                "create:brass_nugget",
-                "#c:brass_nuggets"
-            )
-            .addExternalPart("plate", "create:brass_sheet", "#c:plates/brass")
-            .addExternalPart("block", "create:brass_block", "#c:brass_blocks")
             .defaultRecipes()
             .forgeHammerRecipes();
     });
