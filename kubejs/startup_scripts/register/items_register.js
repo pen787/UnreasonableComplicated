@@ -91,7 +91,13 @@ StartupEvents.registry("item", (event) => {
 StartupEvents.registry("block", (event) => { })
 
 MIRegistrationEvents.registerFluids(event => {
-
+    event.register(
+        "Salt Water", "salt_water", // English name and internal name
+        0x005ce6, // Green-ish color, see https://www.color-hex.com/color/09a837
+        "water", // Steam-like texture
+        false, // true for upside down
+        "medium", // medium transparency
+    );
 })
 
 MIRegistrationEvents.registerFluidFuels(event => {
