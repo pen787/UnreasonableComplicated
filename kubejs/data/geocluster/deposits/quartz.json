@@ -1,31 +1,39 @@
 {
-  "type": "geocluster:deposit_dike",
-  "config": {
-    "yMin": -64,
-    "yMax": -48,
-    "baseRadius": 9,
-    "maxHeight": 8,
-    "biomeTag": "#minecraft:is_overworld",
-    "blocks": {
-      "default": [
-        {
-          "block": "modern_industrialization:quartz_ore",
-          "chance": 1.0
-        }
-      ],
-      "minecraft:deepslate": [
-        {
-          "block": "modern_industrialization:quartz_ore",
-          "chance": 1.0
-        }
-      ]
-    },
-    "samples": [
-      {
-        "block": "geocluster:quartz_ore_sample",
-        "chance": 1.0
-      }
-    ],
-    "generationWeight": 5
-  }
+    "type": "geocluster:deposit_dike",
+    "config": {
+        "yMin": -64,
+        "yMax": -48,
+        "baseRadius": 9,
+        "maxHeight": 8,
+        "biomeTag": "#minecraft:is_overworld",
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:quartz_ore",
+                    "chance": 0.7
+                },
+                {
+                    "block": "modern_industrialization:antimony_ore",
+                    "chance": 0.3
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:quartz_ore",
+                    "chance": 0.7
+                },
+                {
+                    "block": "modern_industrialization:deepslate_antimony_ore",
+                    "chance": 0.3
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:quartz_ore_sample",
+                "chance": 1.0
+            }
+        ],
+        "generationWeight": 5
+    }
 }

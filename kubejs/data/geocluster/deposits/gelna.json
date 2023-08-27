@@ -1,0 +1,44 @@
+{
+	"type": "geocluster:deposit_sparse",
+	"config": {
+	  "yMin": -16,
+	  "yMax": 32,
+	  "size": 128,
+	  "spread": 6,
+	  "biomeTag": "#minecraft:is_overworld",
+	  "blocks": {
+		"default": [
+		  {
+			"block": "modern_industrialization:lead_ore",
+			"chance": 0.5
+		  },
+		  {
+			"block": "modern_industrialization:silver_ore",
+			"chance": 0.5
+		  }
+		],
+		"minecraft:deepslate": [
+		  {
+			"block": "modern_industrialization:lead_ore",
+			"chance": 0.5
+		  },
+		  {
+			"block": "modern_industrialization:deepslate_silver_ore",
+			"chance": 0.5
+		  }
+		]
+	  },
+	  "samples": [
+		{
+		  "block": "geocluster:lead_ore_sample",
+		  "chance": 0.5
+		},
+		{
+		  "block": "geocluster:silver_ore_sample",
+		  "chance": 0.5
+		}
+	  ],
+	  "generationWeight": 7
+	}
+  }
+  

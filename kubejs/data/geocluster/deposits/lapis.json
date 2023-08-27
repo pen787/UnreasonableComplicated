@@ -5,7 +5,7 @@
     "yMax": 64,
     "size": 64,
     "spread": 4,
-    "biomeTag": "#c:is_dry/overworld",
+    "biomeTag": "#minecraft:is_overworld",
     "blocks": {
       "default": [
         {
@@ -26,6 +26,6 @@
         "chance": 1.0
       }
     ],
-    "generationWeight": 5
+    "generationWeight": 2
   }
 }
