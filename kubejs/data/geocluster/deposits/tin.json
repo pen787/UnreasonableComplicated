@@ -3,7 +3,7 @@
   "config": {
     "yMin": 44,
     "yMax": 68,
-    "size": 35,
+    "size": 64,
     "density": 1.0,
     "blocks": {
       "default": [

@@ -31,7 +31,7 @@
     ],
     "yMin": 8,
     "yMax": 33,
-    "size": 24,
+    "size": 32,
     "biomeTag": "#minecraft:is_mountain",
     "generationWeight": 4
   }
