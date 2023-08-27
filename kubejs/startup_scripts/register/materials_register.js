@@ -6,7 +6,7 @@ MIMaterialEvents.addMaterials(event => {
             builder
                 .hardness("soft")
                 .materialSet("shiny")
-                .addParts("ingot", "nugget", "dust", "tiny_dust", "rod", "gear", "ring", "blade", "rotor", "coil", "plate", "bolt", "large_plate")
+                .addParts("dust", "tiny_dust", "rod", "gear", "ring", "blade", "rotor", "coil", "plate", "bolt", "large_plate")
                 .block("copper")
                 .ore({
                     "generate": false,
@@ -15,6 +15,8 @@ MIMaterialEvents.addMaterials(event => {
                     "veins_per_chunk": 8,
                     "max_y": 64,
                 })
+                .addExternalPart("ingot", 'create:zinc_ingot', '#c:zinc_ingots')
+                .addExternalPart("nugget", 'create:zinc_nugget', '#c:zinc_nuggets')
                 .rawMetal("copper")
                 .defaultRecipes()
                 .forgeHammerRecipes();
@@ -22,6 +24,7 @@ MIMaterialEvents.addMaterials(event => {
 
     event.createMaterial("Brass", "brass", 0xb8a41f, (b) => {
         b.materialSet("shiny")
+        b.hardness("average")
         b.addParts(
             "dust",
             "rod",
@@ -32,6 +35,9 @@ MIMaterialEvents.addMaterials(event => {
             "bolt",
             "large_plate"
         )
+            .addExternalPart("ingot",'create:brass_ingot', '#c:brass_ingots')
+            .addExternalPart("nugget", 'create:brass_nugget', '#c:brass_nuggets')
+            .addExternalPart("plate", 'create:brass_sheet', '#c:brass_plates')
             .defaultRecipes()
             .forgeHammerRecipes();
     });
