@@ -16,9 +16,29 @@ ServerEvents.recipes(e => {
 
 		e.recipes.modern_industrialization.cutting_machine(8, 250)
 			.itemIn(element.wafer)
-			.fluidIn('modern_industrialization:lubricant', 100)
+			.fluidIn('modern_industrialization:argon', 50)
 			.itemOut('4x ' + element.plate)
 	});
+
+	//
+	e.remove({type: "modern_industrialization:cutting_machine",input:"modern_industrialization:monocrystalline_silicon"})
+	e.custom({
+	  "type": "modern_industrialization:cutting_machine",
+	  "eu": 16,
+	  "duration": 600,
+	  "item_inputs": {
+		"item": "modern_industrialization:monocrystalline_silicon",
+		"amount": 1
+	  },
+	  "fluid_inputs": {
+		"fluid": "modern_industrialization:argon",
+		"amount": 500
+	  },
+	  "item_outputs": {
+		"item": "modern_industrialization:silicon_wafer",
+		"amount": 32
+	  }
+	})
 
 	//place circuit component using plate circuit silicion thing
 	//// ram plate
