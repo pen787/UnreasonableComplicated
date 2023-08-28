@@ -15,4 +15,21 @@ ServerEvents.recipes(e => {
 		.itemIn('create:brass_casing')
 		.itemIn('create:precision_mechanism')
 		.itemOut('3x create:mechanical_arm')
+
+	//cog well
+	e.recipes.modern_industrialization.assembler(8, 60)
+		.itemIn('create:shaft')
+		.itemIn('2x #minecraft:planks')
+		.itemOut('2x create:large_cogwheel')
+	
+	e.recipes.modern_industrialization.assembler(8, 60)
+		.itemIn('create:shaft')
+		.itemIn('#minecraft:planks')
+		.itemOut('2x create:cogwheel')
+
+	// shaft
+	e.recipes.modern_industrialization.cutting_machine(2, 100)
+		.itemIn('create:andesite_alloy')
+		.fluidIn("modern_industrialization:lubricant",1)
+		.itemOut('8x create:shaft')
 })

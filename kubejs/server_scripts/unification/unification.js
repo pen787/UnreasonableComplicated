@@ -28,6 +28,7 @@ ServerEvents.tags("item",event => {
 	event.get("c:tools/knives").add('notreepunching:gold_knife')
 	event.get("c:tools/knives").add('notreepunching:diamond_knife')
 	event.get("c:tools/knives").add('notreepunching:netherite_knife')
+	event.get("c:tools/axes").add('notreepunching:flint_axe')
 })
 
 LootJS.modifiers(event => {

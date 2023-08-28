@@ -10,11 +10,13 @@ ServerEvents.recipes(e => {
 
 	e.recipes.modern_industrialization.assembler(8, 100)
 		.itemIn('2x modern_industrialization:steel_curved_plate')
-		.itemIn("1x " + MC("glass"))
-		.itemOut("moderndynamics:item_pipe")
+		.itemIn('2x modern_industrialization:steel_gear')
+		.itemIn("2x " +'#c:glass_panes')
+		.itemOut("12x moderndynamics:item_pipe")
 
 	e.recipes.modern_industrialization.assembler(8, 100)
 		.itemIn('2x modern_industrialization:bronze_curved_plate')
-		.itemIn("1x " + MC("glass"))
-		.itemOut("8x moderndynamics:fluid_pipe")
+		.itemIn('2x modern_industrialization:bronze_rotor')
+		.itemIn("2x " + '#c:glass_panes')
+		.itemOut("12x moderndynamics:fluid_pipe")
 })
