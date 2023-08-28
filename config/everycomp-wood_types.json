@@ -1,15 +1,16 @@
 {
   "types": {
+    "leaves_type": {
+      "ad_astra.glacian": true
+    },
     "wood_type": {
       "ad_astra.aeronos": true,
       "ad_astra.strophar": true,
       "ad_astra.glacian": true
-    },
-    "leaves_type": {
-      "ad_astra.glacian": true
     }
   },
   "entries": {
+    "leaves_type": {},
     "wood_type": {
       "farmersdelight.cabinet": true,
       "twigs.table": true,
@@ -22,7 +23,6 @@
       "another_furniture.bench": true,
       "create.window": true,
       "another_furniture.chair": true
-    },
-    "leaves_type": {}
+    }
   }
 }
