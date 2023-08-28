@@ -13,8 +13,18 @@ ServerEvents.recipes(e => {
 	}
 
 	//flux
-	e.shapeless('modern_industrialization:flux_dust', ['#twigs:seashells'])
+	e.shapeless('2x modern_industrialization:flux_dust', ['2x #twigs:seashells'])
 
+	//flux from seashell
+	e.recipes.modern_industrialization.forge_hammer(8, 0)
+		.itemIn('1x #twigs:seashells')
+		.itemOut('1x modern_industrialization:flux_dust')
+
+	e.recipes.modern_industrialization.forge_hammer_machine(2, 100)
+		.itemIn('1x #twigs:seashells')
+		.itemOut('1x modern_industrialization:flux_dust')
+
+	// flux from limestone
 	e.recipes.modern_industrialization.forge_hammer(8, 0)
 		.itemIn('#create:stone_types/limestone')
 		.itemOut('4x modern_industrialization:flux_dust')
@@ -46,7 +56,8 @@ ServerEvents.recipes(e => {
 	forge_hammer_recipe('#c:raw_iron_ores', 'modern_industrialization:low_purity_iron_dust')
 	forge_hammer_recipe('create:crushed_raw_iron', 'modern_industrialization:low_purity_iron_dust')
 
-	// e.smelting(,'modern_industrialization:low_purity_iron_dust')
+	// you can smelt low purity to pig_iron_nuget but i don't recommend
+	e.smelting('2x modern_industrialization:pig_iron_nugget','modern_industrialization:low_purity_iron_dust', 0.8)
 
 	//first mixing to make a iron flux
 	e.shapeless('modern_industrialization:iron_flux_dust', ['modern_industrialization:low_purity_iron_dust', 'modern_industrialization:flux_dust'])
@@ -75,8 +86,36 @@ ServerEvents.recipes(e => {
 		.itemIn('8x modern_industrialization:iron_flux_dust')
 		.itemOut('8x minecraft:iron_ingot')
 	
+	//wrought iron
+	e.recipes.modern_industrialization.blast_furnace(2, 100)
+		.itemIn('8x modern_industrialization:iron_flux_dust')
+		.itemIn('modern_industrialization:flux_dust')
+		.itemOut('8x modern_industrialization:wrought_iron_ingot')
+
+	e.recipes.modern_industrialization.blast_furnace(2, 100)
+		.itemIn('8x modern_industrialization:low_purity_iron_dust')
+		.itemIn('2x modern_industrialization:flux_dust')
+		.itemOut('8x modern_industrialization:wrought_iron_ingot')
+	
+	// low purity iron
 	e.recipes.modern_industrialization.blast_furnace(16, 100)
 		.itemIn('8x modern_industrialization:low_purity_iron_dust')
 		.fluidIn("modern_industrialization:oxygen", 100)
 		.itemOut('8x minecraft:iron_ingot')
+	
+	e.recipes.modern_industrialization.blast_furnace(16, 100)
+		.itemIn('8x modern_industrialization:low_purity_iron_dust')
+		.fluidIn("modern_industrialization:oxygen", 50)
+		.itemOut('8x modern_industrialization:wrought_iron_ingot')
+	
+	// faster steel
+	e.recipes.modern_industrialization.blast_furnace(2, 3000)
+		.itemIn('8x modern_industrialization:wrought_iron_ingot')
+		.itemIn('2x #c:coke_dusts')
+		.itemOut('7x modern_industrialization:steel_ingot')
+	
+	e.recipes.modern_industrialization.blast_furnace(2, 3000)
+		.itemIn('8x #c:wrought_iron_dusts')
+		.itemIn('2x #c:coke_dusts')
+		.itemOut('7x modern_industrialization:steel_ingot')
 })

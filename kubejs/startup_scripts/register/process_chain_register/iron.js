@@ -6,9 +6,10 @@ MIMaterialEvents.addMaterials(event => {
 			builder
 				.hardness("average") // hardness controls the speed of some recipes, can be "soft", "average", "hard", "very_hard" (default is "average")
 				.materialSet("metallic") // controls the texture set used by the material, can be "metallic", "shiny", "stone", "dull" (default is "metallic")
-				.addParts("ingot", "nugget")
+				.addParts("ingot", "nugget", "dust")
 				.block("iron")
 				.defaultRecipes()
+				.forgeHammerRecipes()
 		});
 
 	event.createMaterial("Wrought Iron", "wrought_iron", 0xffcc99, // english name, internal name, and material color in hex
@@ -16,9 +17,10 @@ MIMaterialEvents.addMaterials(event => {
 			builder
 				.hardness("average") // hardness controls the speed of some recipes, can be "soft", "average", "hard", "very_hard" (default is "average")
 				.materialSet("metallic") // controls the texture set used by the material, can be "metallic", "shiny", "stone", "dull" (default is "metallic")
-				.addParts("ingot", "nugget")
+				.addParts("ingot", "nugget", "dust")
 				.block("iron")
 				.defaultRecipes()
+				.forgeHammerRecipes()
 		});
 
 	event.createMaterial("Low purity Iron", "low_purity_iron", 0x808080, // english name, internal name, and material color in hex
