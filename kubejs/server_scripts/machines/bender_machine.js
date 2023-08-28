@@ -89,7 +89,7 @@ ServerEvents.recipes(e => {
 			new_recipe_Result.push(newOutput)
 		})
 
-		benderMachine(new_recipe_ingredients, new_recipe_Result, 8, duration_time / 1.5);
+		benderMachine(new_recipe_ingredients, new_recipe_Result, 8, duration_time / 1.75);
 	})
 
 })
