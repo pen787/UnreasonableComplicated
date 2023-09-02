@@ -19,5 +19,4 @@ python ./buildScript/main.py
 ```
 
 ## Contribute
-
-https://github.com/pen787/UnreasonableComplicated/wiki
+[here](https://github.com/pen787/UnreasonableComplicated/wiki/Contribute)https://github.com/pen787/UnreasonableComplicated/wiki/Contribute
