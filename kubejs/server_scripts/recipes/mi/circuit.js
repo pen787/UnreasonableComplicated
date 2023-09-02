@@ -4,9 +4,19 @@ let CE = (id) => "create:" + id;
 let KJS = (id) => "kubejs:" + id;
 
 ServerEvents.recipes(e => {
+	//better analog circuit
+	e.recipes.modern_industrialization.circuit_assembler(8, 200)
+		.itemIn("3x modern_industrialization:red_alloy_wire")
+		.itemIn('2x modern_industrialization:capacitor')
+		.itemIn('2x modern_industrialization:resistor')
+		.itemIn('modern_industrialization:inductor')
+		.itemIn('modern_industrialization:analog_circuit_board')
+		.fluidIn("modern_industrialization:soldering_alloy", 50)
+		.itemOut('2x modern_industrialization:analog_circuit')
+
 	//better electonic circuit
 	e.recipes.modern_industrialization.circuit_assembler(16, 300)
-		.itemIn("3x modern_industrialization:copper_wire", 0.5)
+		.itemIn("3x modern_industrialization:copper_wire")
 		.itemIn("3x modern_industrialization:analog_circuit")
 		.itemIn("2x modern_industrialization:diode")
 		.itemIn("2x modern_industrialization:transistor")
@@ -17,7 +27,7 @@ ServerEvents.recipes(e => {
 
 	//other
 	e.recipes.modern_industrialization.circuit_assembler(16, 300)
-		.itemIn("3x modern_industrialization:copper_wire", 0.5)
+		.itemIn("3x modern_industrialization:copper_wire")
 		.itemIn("3x kubejs:plate.integrated_logic_circuit")
 		.itemIn("2x modern_industrialization:diode")
 		.itemIn("2x modern_industrialization:transistor")
