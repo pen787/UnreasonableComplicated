@@ -13,7 +13,10 @@ You can get from [here](https://github.com/pen787/UnreasonableComplicated/releas
 
 ## Add new mods
 
-If you add new mod don't forget to run before commit
+If you add new mod don't forget to run before commit.
 ```bash
 python ./buildScript/main.py
 ```
+
+## Contribute
+[here](https://github.com/pen787/UnreasonableComplicated/wiki/Contribute)https://github.com/pen787/UnreasonableComplicated/wiki/Contribute
