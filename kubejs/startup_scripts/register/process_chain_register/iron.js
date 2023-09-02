@@ -6,7 +6,7 @@ MIMaterialEvents.addMaterials(event => {
 			builder
 				.hardness("average") // hardness controls the speed of some recipes, can be "soft", "average", "hard", "very_hard" (default is "average")
 				.materialSet("metallic") // controls the texture set used by the material, can be "metallic", "shiny", "stone", "dull" (default is "metallic")
-				.addParts("ingot", "nugget", "dust")
+				.addParts("ingot", "nugget", "dust","tiny_dust")
 				.block("iron")
 				.defaultRecipes()
 				.forgeHammerRecipes()
@@ -17,7 +17,7 @@ MIMaterialEvents.addMaterials(event => {
 			builder
 				.hardness("average") // hardness controls the speed of some recipes, can be "soft", "average", "hard", "very_hard" (default is "average")
 				.materialSet("metallic") // controls the texture set used by the material, can be "metallic", "shiny", "stone", "dull" (default is "metallic")
-				.addParts("ingot", "nugget", "dust")
+				.addParts("ingot", "nugget", "dust", "tiny_dust")
 				.block("iron")
 				.defaultRecipes()
 				.forgeHammerRecipes()
@@ -28,7 +28,7 @@ MIMaterialEvents.addMaterials(event => {
 			builder
 				.hardness("average") // hardness controls the speed of some recipes, can be "soft", "average", "hard", "very_hard" (default is "average")
 				.materialSet("metallic") // controls the texture set used by the material, can be "metallic", "shiny", "stone", "dull" (default is "metallic")
-				.addParts("dust")
+				.addParts("dust","tiny_dust")
 				.defaultRecipes()
 		});
 
@@ -37,14 +37,14 @@ MIMaterialEvents.addMaterials(event => {
 			builder
 				.hardness("soft") // hardness controls the speed of some recipes, can be "soft", "average", "hard", "very_hard" (default is "average")
 				.materialSet("dull") // controls the texture set used by the material, can be "metallic", "shiny", "stone", "dull" (default is "metallic")
-				.addParts("dust")
+				.addParts("dust","tiny_dust")
 		});
 	
 	event.createMaterial("Iron and Flux", "iron_flux", 0xf0f0f0, // english name, internal name, and material color in hex
 		builder => {
 			builder
 				.materialSet("dull") // controls the texture set used by the material, can be "metallic", "shiny", "stone", "dull" (default is "metallic")
-				.addParts("dust")
+				.addParts("dust","tiny_dust")
 		});
 })
 

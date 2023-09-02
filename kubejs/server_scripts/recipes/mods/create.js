@@ -32,4 +32,34 @@ ServerEvents.recipes(e => {
 		.itemIn('create:andesite_alloy')
 		.fluidIn("modern_industrialization:lubricant",1)
 		.itemOut('8x create:shaft')
+	
+	e.shaped('create:cogwheel', [
+		"WWW",
+		"WAW",
+		"WWW",
+	], {
+		W: "#minecraft:planks",
+		A: "minecraft:polished_andesite"
+	})
+
+	e.shaped('create:hand_crank', [
+		"WWA",
+		"AAA",
+		"WWA",
+	], {
+		W: "#minecraft:planks",
+		A: "minecraft:polished_andesite"
+	})
+
+	e.shaped('create:millstone', [
+		"CWC",
+		"AAA",
+		"AWA",
+	], {
+		W: "#minecraft:planks",
+		A: "minecraft:polished_andesite",
+		C: 'create:cogwheel'
+	})
+
+
 })

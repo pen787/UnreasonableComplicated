@@ -10,3 +10,10 @@ You can get from [here](https://github.com/pen787/UnreasonableComplicated/releas
 [Zedtech texture](https://github.com/Flyte-less/ZedTech-MI)
 
 [Packwiz Documentation](https://packwiz.infra.link)
+
+## Add new mods
+
+If you add new mod don't forget to run before commit
+```bash
+python ./buildScript/main.py
+```
