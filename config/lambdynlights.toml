@@ -38,6 +38,7 @@ mode = "fancy"
 				experience_orb = true
 				dolphin = true
 				item = true
+				stray = true
 				turtle = true
 				salmon = true
 				wandering_trader = true
