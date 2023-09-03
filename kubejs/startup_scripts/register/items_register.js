@@ -106,11 +106,18 @@ MIRegistrationEvents.registerFluids(event => {
         "medium", // medium transparency
     );
     event.register(
-        "Ammonia", "ammonia", // English name and internal name
-        0x999966, // Green-ish color, see https://www.color-hex.com/color/09a837
-        "water", // Steam-like texture
-        false, // true for upside down
-        "medium", // medium transparency
+        "Ammonia", "ammonia",
+        0x999966,
+        "water",
+        false,
+        "medium",
+    );
+    event.register(
+        "Aqua Regia", "aqua_regia",
+        0xcc3300,
+        "water",
+        false,
+        "low",
     );
 })
 
