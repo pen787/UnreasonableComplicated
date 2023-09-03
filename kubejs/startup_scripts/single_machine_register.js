@@ -11,6 +11,7 @@ let LASER_MACHINE;
 let FORGE_HAMMER_MACHINE;
 let BLENDER_MACHINE;
 let ALLOY_SMELTER;
+let AIR_COLLECTOR;
 
 MIMachineEvents.registerRecipeTypes((event) => {
 	CIRCUIT_ASSEMBLER = event
@@ -44,7 +45,10 @@ MIMachineEvents.registerRecipeTypes((event) => {
 		.withItemInputs()
 		.withItemOutputs();
 
-	
+	AIR_COLLECTOR = event
+	.register("air_collector")
+	.withItemInputs()
+	.withFluidOutputs()
 });
 
 MIMachineEvents.registerMachines((event) => {
@@ -247,6 +251,40 @@ MIMachineEvents.registerMachines((event) => {
 		//then 1x3 grid of item slots starting at position (139, 27).
 		(items) => items.addSlots(42, 45, 1, 1).addSlots(139, 45, 1, 1),
 		(fluids) => { },
+
+		/* MODEL CONFIGURATION */
+		// front overlay?, top overlay?, side overlay?
+		true,
+		false,
+		false
+	);
+
+	event.craftingSingleBlock(
+		"Air Collector",
+		"air_collector",
+		AIR_COLLECTOR,
+		["electric"],
+
+		/* GUI CONFIGURATION */
+		// Background height (or -1 for default value), progress bar, efficiency bar, energy bar
+		186,
+		event.progressBar(105, 45, "arrow"),
+		event.efficiencyBar(48, 86),
+		event.energyBar(14, 34),
+
+		/* SLOT CONFIGURATION */
+		// Number of slots: item inputs, item outputs, fluid inputs, fluid outputs
+		1,
+		0,
+		0,
+		1,
+		// Capacity for fluid slots (unused here)
+		16,
+		// Slot positions: items and fluids.
+		// Explanation: 3x3 grid of item slots starting at position (42, 27),
+		//then 1x3 grid of item slots starting at position (139, 27).
+		(items) => items.addSlots(42, 45, 1, 1),
+		(fluids) => fluids.addSlots(139, 45, 1, 1),
 
 		/* MODEL CONFIGURATION */
 		// front overlay?, top overlay?, side overlay?

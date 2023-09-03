@@ -14,7 +14,7 @@ ServerEvents.recipes((e) => {
     ).keepIngredient("#modern_industrialization:forge_hammer_tools");
 
     //crafting table
-    e.remove({id:"minecraft:crafting_table"})
+    e.remove({ id: "minecraft:crafting_table" })
     e.shaped(
         Item.of("crafting_table", 1),
         [
@@ -90,13 +90,13 @@ ServerEvents.recipes((e) => {
     ]).keepIngredient("kubejs:wooden_form.brick");
 
     //remove food smelting with furnace
-    e.remove({type: "smelting", input:"#c:foods"})
+    e.remove({ type: "smelting", input: "#c:foods" })
 
     //smoker
-    e.remove({output:'minecraft:smoker'})
+    e.remove({ output: 'minecraft:smoker' })
     e.shaped('minecraft:smoker', [
-        "apa", 
-        "b b", 
+        "apa",
+        "b b",
         "rbr"
     ], {
         b: 'modern_industrialization:fire_clay_bricks',
@@ -106,27 +106,27 @@ ServerEvents.recipes((e) => {
     })
 
     //furnace
-    e.remove({output:'minecraft:furnace'})
+    e.remove({ output: 'minecraft:furnace' })
     e.shaped('minecraft:furnace', [
-        "bbb", 
-        "b b", 
+        "bbb",
+        "b b",
         "bbb"
     ], {
         b: 'modern_industrialization:fire_clay_brick',
     })
 
     // door recipe :troll:
-    e.forEachRecipe({type:"crafting_shaped",output:'#minecraft:wooden_doors'}, r => {
+    e.forEachRecipe({ type: "crafting_shaped", output: '#minecraft:wooden_doors' }, r => {
         const recipe_id = r.getId()
         const original_res = r.originalRecipeResult
         const json_recipe = JSON.parse(r.json.toString())
 
-        e.remove({id: recipe_id})
+        e.remove({ id: recipe_id })
 
         e.shaped(original_res, [
-         "RWB",   
-         "AWR",   
-         "RWB",   
+            "RWB",
+            "AWR",
+            "RWB",
         ], {
             W: json_recipe.key['#'].item,
             A: 'modern_industrialization:iron_ring',
@@ -136,22 +136,80 @@ ServerEvents.recipes((e) => {
     })
 
     // trap recipe :troll:
-    e.forEachRecipe({type:"crafting_shaped",output:'#minecraft:wooden_trapdoors'}, r => {
+    e.forEachRecipe({ type: "crafting_shaped", output: '#minecraft:wooden_trapdoors' }, r => {
         const recipe_id = r.getId()
         const original_res = r.originalRecipeResult
         const json_recipe = JSON.parse(r.json.toString())
 
-        e.remove({id: recipe_id})
+        e.remove({ id: recipe_id })
 
         e.shaped(original_res, [
-         "AWA",   
-         "BWB",   
-         "   ",   
+            "AWA",
+            "BWB",
+            "   ",
         ], {
             W: json_recipe.key['#'].item,
             A: 'modern_industrialization:iron_ring',
             B: 'modern_industrialization:iron_bolt',
         })
     })
+
+    // iron tool need upgrade
+    e.remove({ output: "iron_pickaxe" })
+    e.smithing(
+        Item.of('minecraft:iron_pickaxe', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_pickaxe', '{Damage:0}'),
+        'minecraft:iron_ingot'
+    )
+
+    e.remove({ output: "iron_axe" })
+    e.smithing(
+        Item.of('minecraft:iron_axe', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_axe', '{Damage:0}'),
+        'minecraft:iron_ingot'
+    )
+
+    e.remove({ output: "iron_shovel" })
+    e.smithing(
+        Item.of('minecraft:iron_shovel', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_shovel', '{Damage:0}'),
+        'minecraft:iron_ingot'
+    )
+
+    e.remove({ output: "iron_hoe" })
+    e.smithing(
+        Item.of('minecraft:iron_hoe', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_hoe', '{Damage:0}'),
+        'minecraft:iron_ingot'
+    )
+
+    //gold
+    e.remove({ output: "golden_pickaxe" })
+    e.smithing(
+        Item.of('minecraft:golden_pickaxe', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_pickaxe', '{Damage:0}'),
+        'minecraft:gold_ingot'
+    )
+
+    e.remove({ output: "golden_axe" })
+    e.smithing(
+        Item.of('minecraft:golden_axe', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_axe', '{Damage:0}'),
+        'minecraft:gold_ingot'
+    )
+
+    e.remove({ output: "golden_shovel" })
+    e.smithing(
+        Item.of('minecraft:golden_shovel', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_shovel', '{Damage:0}'),
+        'minecraft:gold_ingot'
+    )
+
+    e.remove({ output: "golden_hoe" })
+    e.smithing(
+        Item.of('minecraft:golden_hoe', '{Damage:0}'),
+        Item.of('exlinecopperequipment:copper_hoe', '{Damage:0}'),
+        'minecraft:gold_ingot'
+    )
 
 });
