@@ -1,0 +1,46 @@
+ServerEvents.recipes(e => {
+	e.recipes.modern_industrialization.chemical_reactor(30, 50)
+		.itemIn('minecraft:raw_copper')
+		.fluidIn("modern_industrialization:nitric_acid", 100)
+		.fluidOut("modern_industrialization:sulfuric_copper_solution", 1000)
+		.itemOut('2x #c:platinum_group_sludge_dusts')
+	
+	e.recipes.modern_industrialization.electrolyzer(60, 100)
+		.fluidIn("modern_industrialization:sulfuric_copper_solution", 1000)
+		.itemOut("modern_industrialization:copper_dust")
+		.fluidOut("modern_industrialization:sulfuric_acid",1000)
+		.fluidOut("modern_industrialization:oxygen",1000)
+
+	e.recipes.modern_industrialization.centrifuge(48, 300)
+		.itemIn('6x #c:platinum_group_sludge_dusts')
+		.fluidIn('modern_industrialization:aqua_regia', 1200)
+		.itemOut('2x #c:rare_earth_dusts')
+		.fluidOut("modern_industrialization:platinum_sulfuric_solution", 200)
+
+	e.recipes.modern_industrialization.chemical_reactor(52, 740)
+		.itemIn("7x modern_industrialization:rare_earth_dust")
+		.fluidIn("modern_industrialization:hydrochloric_acid", 4000)
+		.itemOut('1x modern_industrialization:iridium_tiny_dust')
+		.fluidOut("modern_industrialization:acidic_osmium_solution",2000)
+		.fluidOut("modern_industrialization:hydrogen",3000)
+
+	e.recipes.modern_industrialization.distillation_tower(120, 400)
+		.fluidIn("modern_industrialization:acidic_osmium_solution",2000)
+		.fluidOut("modern_industrialization:osmium_tetroxide_liquid", 5000)
+		.fluidOut("modern_industrialization:hydrochloric_acid", 1000)
+
+	e.recipes.modern_industrialization.centrifuge(16, 100)
+		.fluidIn("modern_industrialization:osmium_tetroxide_liquid",1000)
+		.itemOut("1x modern_industrialization:osmium_tetroxide_dust")
+		.fluidOut("water", 1000)
+
+	e.recipes.modern_industrialization.chemical_reactor(30, 200)
+		.itemIn("5x modern_industrialization:osmium_tetroxide_dust")
+		.fluidIn("modern_industrialization:hydrogen", 8000)
+		.itemOut("modern_industrialization:unsmelt_osmium_dust")
+		.fluidOut("water",4000)
+
+	e.recipes.modern_industrialization.blast_furnace(32, 300)
+		.itemIn("modern_industrialization:unsmelt_osmium_dust")
+		.itemOut('modern_industrialization:osmium_hot_ingot')
+})

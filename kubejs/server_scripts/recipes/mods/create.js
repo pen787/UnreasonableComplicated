@@ -39,7 +39,7 @@ ServerEvents.recipes(e => {
 		"WWW",
 	], {
 		W: "#minecraft:planks",
-		A: "minecraft:polished_andesite"
+		A: '#c:bronze_ingots'
 	})
 
 	e.shaped('create:hand_crank', [
@@ -48,16 +48,16 @@ ServerEvents.recipes(e => {
 		"WWA",
 	], {
 		W: "#minecraft:planks",
-		A: "minecraft:polished_andesite"
+		A: '#c:bronze_nuggets'
 	})
 
 	e.shaped('create:millstone', [
 		"CWC",
-		"AAA",
 		"AWA",
+		"WWW",
 	], {
 		W: "#minecraft:planks",
-		A: "minecraft:polished_andesite",
+		A: '#c:bronze_ingots',
 		C: 'create:cogwheel'
 	})
 

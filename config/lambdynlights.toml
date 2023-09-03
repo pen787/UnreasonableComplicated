@@ -60,6 +60,7 @@ mode = "fancy"
 				tropical_fish = true
 				chest_minecart = true
 				slime = true
+				pillager = true
 				iron_golem = true
 				cat = true
 				zombie = true
@@ -68,6 +69,7 @@ mode = "fancy"
 				pufferfish = true
 				wolf = true
 				villager = true
+				skeleton_horse = true
 				zombie_villager = true
 				polar_bear = true
 				witch = true
@@ -102,4 +104,7 @@ mode = "fancy"
 				bass = true
 				giraffe = true
 				elephant = true
+
+			[light_sources.settings.entities.artifacts]
+				mimic = true
 

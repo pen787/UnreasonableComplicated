@@ -9,9 +9,8 @@
 			"{mode:\"NOT_SET\",type:\"roughlyenoughitems:gamemode\"}",
 			"{mode:\"NOT_SET\",type:\"roughlyenoughitems:time\"}",
 			"{type:\"roughlyenoughitems:weather\",weather:\"NOT_SET\"}",
-			"{data:{Count:1b,id:\"minecraft:white_wool\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
-			"{data:{Count:1b,id:\"modern_industrialization:bronze_ingot\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
-			"{data:{Count:1b,id:\"minecraft:copper_ingot\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
+			"{data:{Count:1b,id:\"minecraft:raw_copper\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+			"{data:{amount:81000L,id:\"modern_industrialization:hydrochloric_acid\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}"
 		],
 		"hiddenFavorites": [],
 		"displayHistory": [],
