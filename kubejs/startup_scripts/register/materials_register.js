@@ -35,11 +35,30 @@ MIMaterialEvents.addMaterials(event => {
             "bolt",
             "large_plate"
         )
-            .addExternalPart("ingot",'create:brass_ingot', '#c:brass_ingots')
+            .addExternalPart("ingot", 'create:brass_ingot', '#c:brass_ingots')
             .addExternalPart("nugget", 'create:brass_nugget', '#c:brass_nuggets')
             .addExternalPart("plate", 'create:brass_sheet', '#c:brass_plates')
             .defaultRecipes()
             .forgeHammerRecipes();
+    });
+
+    event.createMaterial("Lithium", "Lithium", 0xbbbbbb, (b) => {
+        b.materialSet("stone")
+        b.hardness("soft")
+        b.addParts(
+            "dust",
+            "tiny_dust",
+        )
+            .ore({
+                "generate": false,
+                "ore_set": "copper",
+                "vein_size": 8,
+                "veins_per_chunk": 8,
+                "max_y": 64,
+            })
+            .defaultRecipes()
+            .forgeHammerRecipes()
+            .battery(14000000);
     });
 });
 
