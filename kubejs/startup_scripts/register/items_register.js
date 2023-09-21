@@ -119,6 +119,14 @@ MIRegistrationEvents.registerFluids(event => {
         false,
         "low",
     );
+
+    event.register(
+        "Mercury", "mercury",
+        0xaabbaa,
+        "water",
+        false,
+        "low",
+    );
 })
 
 MIRegistrationEvents.registerFluidFuels(event => {

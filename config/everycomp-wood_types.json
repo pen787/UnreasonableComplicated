@@ -1,16 +1,15 @@
 {
   "types": {
-    "leaves_type": {
-      "ad_astra.glacian": true
-    },
     "wood_type": {
       "ad_astra.aeronos": true,
       "ad_astra.strophar": true,
       "ad_astra.glacian": true
+    },
+    "leaves_type": {
+      "ad_astra.glacian": true
     }
   },
   "entries": {
-    "leaves_type": {},
     "wood_type": {
       "chipped.fine_planks": true,
       "chipped.checkered_trapdoor": true,
@@ -131,6 +130,7 @@
       "chipped.tile_windowed_door": true,
       "chipped.golden_barred_trapdoor": true,
       "another_furniture.chair": true
-    }
+    },
+    "leaves_type": {}
   }
 }
