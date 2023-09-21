@@ -3,11 +3,12 @@ filename = "item-filters-fabric-1902.2.9-build.51.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "25b4e0fbbeb7673216db09b3ec68e55af4208cf4"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://cdn.modrinth.com/data/1KLyhGRz/versions/ADkZnrz3/item-filters-fabric-1902.2.9-build.51.jar"
+hash-format = "sha512"
+hash = "b64fdf6bcabe3d3c217555fd9745f85452bd2b7d1f70d4944ad1978d058618277663ca99845786e9ac52fab4ac5843e10c6c5c38586d61810bdc449c13ff2d6a"
 
 [update]
-[update.curseforge]
-file-id = 4553325
-project-id = 309674
+[update.modrinth]
+mod-id = "1KLyhGRz"
+version = "ADkZnrz3"

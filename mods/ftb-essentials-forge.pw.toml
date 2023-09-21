@@ -3,9 +3,10 @@ filename = "ftb-essentials-fabric-1902.3.3-build.100.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "ce7ac748ee7f40b9661ea14f46ae1fcdaf58de3c"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

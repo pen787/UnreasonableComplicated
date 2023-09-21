@@ -3,11 +3,12 @@ filename = "lootjs-fabric-1.19.2-2.9.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "fb4c3148b4e2e12f8f210cbf69f013478e59f544"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://cdn.modrinth.com/data/fJFETWDN/versions/jvKVmC1y/lootjs-fabric-1.19.2-2.9.1.jar"
+hash-format = "sha512"
+hash = "8f1041fd370360160a5dae71d45050a257c142195bcb2ff2875cf40d3adb65cc894ec6029b7f64a30ae6e103bbe37e292ce1f56150f6a33a407b64d998ca8cea"
 
 [update]
-[update.curseforge]
-file-id = 4709098
-project-id = 570630
+[update.modrinth]
+mod-id = "fJFETWDN"
+version = "jvKVmC1y"

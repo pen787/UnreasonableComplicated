@@ -3,9 +3,10 @@ filename = "createaddition-fabric+1.19.2-20230723a.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "9f69e9ffb80b479df765102528ff917f91670c90"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

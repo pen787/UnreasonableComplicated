@@ -1,0 +1,14 @@
+name = "MI Sound Addon"
+filename = "mi_sound_addon-1.0.1-1.19.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "708809bbcde1e63529e5a17311ba1b0712a86550"
+
+[update]
+[update.curseforge]
+file-id = 4752437
+project-id = 910125

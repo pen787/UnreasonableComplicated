@@ -3,11 +3,12 @@ filename = "jmi-fabric-1.19.2-0.13-44.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "bb7d9cc57b25867aa2cbf611597e4d9d16806ce4"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://cdn.modrinth.com/data/M1ZKbfkJ/versions/MlxyjJ0B/jmi-fabric-1.19.2-0.13-44.jar"
+hash-format = "sha512"
+hash = "b6c80b51aab314311f92f175e83bdc6103b42fff1333504a5a2cb7182321d1ae3ab3e85f6cd1dc881aa3390ac22f6fc797ff94d72d853fb5ef7770044be10f17"
 
 [update]
-[update.curseforge]
-file-id = 4672154
-project-id = 525447
+[update.modrinth]
+mod-id = "M1ZKbfkJ"
+version = "MlxyjJ0B"

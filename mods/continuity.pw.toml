@@ -3,9 +3,10 @@ filename = "continuity-2.0.2+1.19.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "b7f4060c66eee13fa1385da89090560de30358e1"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

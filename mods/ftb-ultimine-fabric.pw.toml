@@ -3,9 +3,10 @@ filename = "ftb-ultimine-fabric-1902.4.1-build.90.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "330613d3d0fdf1ad935c45ac88e64c9473f81b39"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

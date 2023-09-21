@@ -3,9 +3,10 @@ filename = "journeymap-1.19.2-5.9.7-fabric.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "bc90457ed5e87c46209b6192b7f71f71ecfbc407"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

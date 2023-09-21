@@ -1,13 +1,14 @@
-name = "Inventory Essentials (Fabric Edition)"
-filename = "inventoryessentials-fabric-1.19-5.0.2.jar"
+name = "Inventory Essentials"
+filename = "inventoryessentials-fabric-1.19.2-5.4.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "875701ca3f30ea2bac1992423e023af4a6e99832"
 mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "0a4d53371b0765a31081f7c8862d17b32ffeb9ad"
 
 [update]
 [update.curseforge]
-file-id = 4414161
+file-id = 4751200
 project-id = 547699

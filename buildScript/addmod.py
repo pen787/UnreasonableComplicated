@@ -2,8 +2,8 @@ import shutil
 import subprocess
 import os
 
-source_dir = os.path.abspath("../mods")
-destination_dir = os.path.abspath("../cpy_mods")
+source_dir = os.path.abspath("./mods")
+destination_dir = os.path.abspath("./cpy_mods")
 
 shutil.copytree(source_dir, destination_dir)
 
@@ -14,10 +14,9 @@ file_extension = '.jar'
 
 for root, _, files in os.walk(destination_dir):
     for file in files:
-        if file.endswith(file_extension):
-            source_file = os.path.join(root, file)
-            destination_file = os.path.join(source_dir, file)
-            shutil.move(source_file, destination_file)
+        source_file = os.path.join(root, file)
+        destination_file = os.path.join(source_dir, file)
+        shutil.move(source_file, destination_file)
             
 shutil.rmtree(destination_dir)
 

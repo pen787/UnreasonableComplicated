@@ -3,9 +3,10 @@ filename = "ftb-chunks-fabric-1902.4.2-build.302.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "ee0c64acfbf5f2de09b425a6eda04f05143f4715"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

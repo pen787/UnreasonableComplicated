@@ -3,11 +3,12 @@ filename = "CorgiLib-fabric-1.19.2-1.0.0.34.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "9afa2d59e20a5e19c3a926e1645a890dec0c3475"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://cdn.modrinth.com/data/ziOp6EO8/versions/HaZfKDxj/CorgiLib-fabric-1.19.2-1.0.0.34.jar"
+hash-format = "sha512"
+hash = "58e465fd2fb8587fc2a147faff2e568d40b248b9e34e887f2a9185c80c06b880f35201a83343447d0ff7c59a4b8d6c3752dc3478c4e1d19236c9b5c4339b4a1d"
 
 [update]
-[update.curseforge]
-file-id = 4554112
-project-id = 693313
+[update.modrinth]
+mod-id = "ziOp6EO8"
+version = "HaZfKDxj"

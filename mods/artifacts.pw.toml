@@ -1,0 +1,14 @@
+name = "Artifacts"
+filename = "artifacts-7.1.1+fabric.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/P0Mu4wcQ/versions/7.1.1%2Bfabric/artifacts-7.1.1%2Bfabric.jar"
+hash-format = "sha512"
+hash = "a3d6e789210ab2e3b510c824179bdb9b1b7f10a05e9a18445a7aee6eee68ebe88261cb590a6ed556beb6e722a8c015c008bf4225e30df8b8b5f87e2eea11e428"
+
+[update]
+[update.modrinth]
+mod-id = "P0Mu4wcQ"
+version = "enKgSs94"

@@ -3,9 +3,10 @@ filename = "Enhanced_Celestials-fabric-1.19.2-2.1.0.6.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "d26c5cf67846d51f2cda6f39765cdf65d543028b"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

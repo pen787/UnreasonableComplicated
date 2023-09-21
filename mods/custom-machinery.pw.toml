@@ -1,13 +1,14 @@
 name = "Custom Machinery"
-filename = "CustomMachinery-fabric-1.19.2-0.9.1.jar"
+filename = "CustomMachinery-fabric-1.19.2-0.9.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "a8abbd9c768376eb45c71ea1025f699030612731"
 mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "55f79f70b07c7aaef41f20a4e2ce19fe81dac09e"
 
 [update]
 [update.curseforge]
-file-id = 4653207
+file-id = 4735367
 project-id = 457017

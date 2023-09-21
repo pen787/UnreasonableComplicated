@@ -3,9 +3,10 @@ filename = "ftbbackups2-fabric-1.19.2-1.0.19.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "ccc61fefb47ae237976d111b2a9c54e0da91a42a"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

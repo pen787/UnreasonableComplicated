@@ -3,11 +3,12 @@ filename = "CreateFabricREIBugFix-0.1.5-create0.5.1-mc1.19.x.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "618d9c38225a1742449672e5d170e89e27d6846f"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://cdn.modrinth.com/data/lSw4RpVn/versions/jVVMcyna/CreateFabricREIBugFix-0.1.5-create0.5.1-mc1.19.x.jar"
+hash-format = "sha512"
+hash = "8afc45261fb9bc220c20239b7ee1e6ff6eb3f5e944e1ec3f90c46090a313ee9f9c14eb5ad03ea42ea962b234f3e5cbe65e3f54409a35b5f1285eb4c6bc2fb735"
 
 [update]
-[update.curseforge]
-file-id = 4631368
-project-id = 846935
+[update.modrinth]
+mod-id = "lSw4RpVn"
+version = "jVVMcyna"

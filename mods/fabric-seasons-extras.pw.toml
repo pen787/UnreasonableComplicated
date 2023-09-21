@@ -3,9 +3,10 @@ filename = "fabric-seasons-extras-1.2-BETA+1.19.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "77b4019f9f8477012553b65f867d3901a63ea803"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

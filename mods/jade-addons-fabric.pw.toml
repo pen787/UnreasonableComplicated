@@ -3,9 +3,10 @@ filename = "JadeAddons-1.19.2-fabric-3.2.0.jar"
 side = "both"
 
 [download]
+mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
 hash = "84663e12db5c9619fd21064ab227899c799ab759"
-mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]

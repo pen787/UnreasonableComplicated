@@ -3,11 +3,12 @@ filename = "rhino-fabric-1902.2.2-build.272.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "0d4b1d622a3db41f5474a9f7dc8a687f48cb6657"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://cdn.modrinth.com/data/sk9knFPE/versions/FWhq0g2w/rhino-fabric-1902.2.2-build.272.jar"
+hash-format = "sha512"
+hash = "6bfeb6e9e8367e9c8766c97213f7b2f9154b9d6d7720db82ebb3ad52efaf4107e6e67356c1e80664ca5e6c13df8d0d0b9f4420a5dc29c5875a9cdc648fd9e02d"
 
 [update]
-[update.curseforge]
-file-id = 4715266
-project-id = 416294
+[update.modrinth]
+mod-id = "sk9knFPE"
+version = "FWhq0g2w"

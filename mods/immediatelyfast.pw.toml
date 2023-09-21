@@ -1,0 +1,14 @@
+name = "ImmediatelyFast"
+filename = "ImmediatelyFast-1.2.4+1.19.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d521343cd62a260a9e845010c1907e391a5c5584"
+
+[update]
+[update.curseforge]
+file-id = 4754521
+project-id = 686911

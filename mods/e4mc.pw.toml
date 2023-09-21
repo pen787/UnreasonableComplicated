@@ -3,11 +3,12 @@ filename = "e4mc-4.0.1+1.19.4-fabric.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "458253f15e3c5bb0d5354f42f3eedc5b1a71472c"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://cdn.modrinth.com/data/qANg5Jrr/versions/vVFlVRt7/e4mc-4.0.1%2B1.19.4-fabric.jar"
+hash-format = "sha512"
+hash = "6dc10427ae9df71562ab948bb6b2502219bb5c37f58cc265390d9e311fc2b442a403440bb63953c6623777792d0c5cbafe0d894faa1c4cac282169d2000b22a3"
 
 [update]
-[update.curseforge]
-file-id = 4715350
-project-id = 849519
+[update.modrinth]
+mod-id = "qANg5Jrr"
+version = "vVFlVRt7"
