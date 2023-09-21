@@ -1,5 +1,5 @@
 ServerEvents.recipes(e => {
-	e.recipes.modern_industrialization.air_collector(16, 300)
+	e.recipes.modern_industrialization.air_collector(16, 500)
 		.itemIn('modern_industrialization:aluminum_rotor', 0.02)
 		.fluidOut("modern_industrialization:air", 10000)
 

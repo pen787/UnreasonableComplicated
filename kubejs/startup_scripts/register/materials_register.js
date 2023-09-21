@@ -42,23 +42,19 @@ MIMaterialEvents.addMaterials(event => {
             .forgeHammerRecipes();
     });
 
-    event.createMaterial("Lithium", "Lithium", 0xbbbbbb, (b) => {
-        b.materialSet("stone")
-        b.hardness("soft")
-        b.addParts(
-            "dust",
-            "tiny_dust",
-        )
-            .ore({
-                "generate": false,
-                "ore_set": "copper",
-                "vein_size": 8,
-                "veins_per_chunk": 8,
-                "max_y": 64,
-            })
-            .defaultRecipes()
-            .forgeHammerRecipes()
-            .battery(14000000);
+    event.createMaterial("Lithium", "lithium", 0xbbbbbb, (b) => {
+        b.addParts("dust", "tiny_dust")
+        b.ore({
+            "generate": false,
+            "ore_set": "copper",
+            "vein_size": 8,
+            "veins_per_chunk": 8,
+            "max_y": 64,
+        })
+        b.rawMetal("copper")
+        b.defaultRecipes()
+        b.forgeHammerRecipes()
+        b.battery(14000000);
     });
 });
 

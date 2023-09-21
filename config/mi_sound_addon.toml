@@ -26,3 +26,4 @@ unpackerVolume = 1.0
 vacuumFreezerVolume = 1.0
 wiremillVolume = 1.0
 wrenchVolume = 1.0
+replicatorVolume = 1.0
