@@ -116,4 +116,8 @@ ServerEvents.recipes(e => {
 		]
 	})
 
+	e.recipes.modern_industrialization.centrifuge(16, 200)
+		.fluidIn("modern_industrialization:carbon_dioxide",1000)
+		.itemOut("x3 #c:carbon_tiny_dusts")
+		.fluidOut("modern_industrialization:oxygen", 750)
 })

@@ -49,6 +49,8 @@ MIMachineEvents.registerRecipeTypes((event) => {
 	.register("air_collector")
 	.withItemInputs()
 	.withFluidOutputs()
+
+	
 });
 
 MIMachineEvents.registerMachines((event) => {

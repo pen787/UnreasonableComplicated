@@ -127,6 +127,24 @@ MIRegistrationEvents.registerFluids(event => {
         false,
         "low",
     );
+
+    event.register(
+        "Carbon Dioxide", "carbon_dioxide",
+        0x111111,
+        "steam",
+        true,
+        "medium",
+    );
+
+    event.register(
+        "Carbon Monoxide", "carbon_monoxide",
+        0x222222,
+        "steam",
+        true,
+        "medium",
+    );
+
+    
 })
 
 MIRegistrationEvents.registerFluidFuels(event => {
